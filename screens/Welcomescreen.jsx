@@ -34,13 +34,25 @@ export default function WelcomeScreen({ props, navigation }) {
 
                 <TouchableOpacity
                     style={{
-                        margin: 20,
-                        borderColor: 'black',
+                        elevation: 8,
+                        backgroundColor: "#d34531",
+                        borderRadius: 10,
+                        paddingVertical: 15,
+                        paddingHorizontal: 12,
+                        marginBottom: '10%',
+                        width: '80%',
+                        height: '20%',
                     }}
                     onPress={() => navigation.navigate("Registrasion", { username: "Alvin" })}
                 >
-                    <Text style={{ color: '#fff7fd', fontSize: 15, }}>Continue with phone number</Text>
+                    <Text style={{
+                        color: '#fff7fd',
+                        fontSize: 16,
+                        justifyContent: 'center',
+                        textAlign: 'center'
+                    }}>Continue with phone number</Text>
                 </TouchableOpacity>
+
             </View>
         </View>
     )
